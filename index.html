@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>个人简历_1</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    main {
+      width: 100%;
+      position: relative;
+    }
+    #word {
+      height: 100%;
+      overflow-y: auto;
+      word-wrap: break-word;
+    }
+    @media screen and (max-width: 500px) {
+      #words,
+      #taiji {
+        width: 100%;
+        height: 50vh;
+      }
+      #taiji {
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    @media screen and (min-width: 500px) {
+      #taiji {
+        position: fixed;
+        top: 50px;
+        right: 140px;
+      }
+    }
+    #div1 {
+      position: relative;
+    }
+    #div1::before {
+      content: "";
+      position: absolute;
+    }
+    #div1::after {
+      content: "";
+      position: absolute;
+    }
+  </style>
+  <body>
+    <style id="style"></style>
+    <main>
+      <div id="words">
+        <div id="word"></div>
+      </div>
+
+      <div id="taiji">
+        <div id="div1"></div>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
