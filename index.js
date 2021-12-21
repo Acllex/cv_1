@@ -79,6 +79,6 @@ let fn = ()=>{
         if (n-1 < str.length) {
             fn();
         }
-    }, 10)
+    }, 50)
 }
 fn();
